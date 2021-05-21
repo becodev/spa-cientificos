@@ -1,11 +1,9 @@
-
-
 const Header = () => {
-    const view = `
-        <div class="Header-main">
+  const view = `
+        <div class="Header-main" id="header">
             <div class=" Header-logo">
                 <h1>
-                    <a>
+                    <a href="/">
                      Cientificos.co
                     </a>
                 </h1>
@@ -16,10 +14,9 @@ const Header = () => {
                     About
                 </a>
             </div>
-        
         </div>
-    
-    `
-}
+    `;
+  return view;
+};
 
 export default Header;
