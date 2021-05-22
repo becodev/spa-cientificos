@@ -10,20 +10,24 @@ const Character = async () => {
   const episodes = character.episode.length;
 
   const view = `
-    <div class="Character-inner">
+    <div class="card" style="width: 25rem">
+    <img src="${image}" alt="${name}" class="card-img-top" />
+        <div class="card-body">
+        <h3 class="card-title"><span>${name} </span> </h3>
         <article class="Character-card">
-            <img src="${image}" alt="${name}" />
-            <h2>Nombre: <span>${name} </span> </h2>
+            <h5>Episodios: <span>${episodes}</span></h5>
+            <h5>Status: <span>${status} </span></h5>
+            <h5>Species: <span>${species}</span> </h5>
+            <h5>Gender: <span>${gender} </span></h5>
+            <h5>Origin: <span>${origin}</span></h5>
+            <h5>last location: <span>${location}</span></h5>
         </article>
+        </div>
+            
+            
+      
 
-        <article class="Character-card">
-            <h3>Episodios: <span>${episodes}</span></h3>
-            <h3>Status: <span>${status} </span></h3>
-            <h3>Species: <span>${species}</span> </h3>
-            <h3>Gender: <span>${gender} </span></h3>
-            <h3>Origin: <span>${origin}</span></h3>
-            <h3>last location: <span>${location}</span></h3>
-        </article>
+        
     </div>`;
 
   return view;

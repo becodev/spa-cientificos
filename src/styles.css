@@ -1,0 +1,21 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.characters {
+  margin-top: 10px;
+}
+
+.character-item {
+  margin: 5px;
+}
+
+.card {
+  padding: 0;
+}

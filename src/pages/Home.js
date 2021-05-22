@@ -4,18 +4,22 @@ const Home = async () => {
   const characters = await getData();
 
   const view = `
-        <div class="character">
-        ${characters.results.map((character) => {
-          const { id, name, image } = character;
-          return `
-            <article class="character-item">
+        <div class="characters row justify-content-center">
+        ${characters.results
+          .map((character) => {
+            const { id, name, image } = character;
+            return `
+            <div class="card character-item" style="width: 18rem;">
+            <img src="${image}" class="card-img-top" style="width:auto">
                 <a href="#/${id}/">
-                    <h2>${name}</h2>
-                    <img src="${image}" alt="name">
+                
+                <div class="card-body">
+                  <h2 class="card-title">${name}</h2>
+                </div>    
                 </a>
-            </article>`;
-        })}
-            
+            </div>`;
+          })
+          .join("")}
         </div>  
     `;
   return view;

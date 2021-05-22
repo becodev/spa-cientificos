@@ -1,19 +1,19 @@
 const Header = () => {
   const view = `
-        <div class="Header-main" id="header">
-            <div class=" Header-logo">
+        <div>
+            <div class=" navbar navbar-light bg-light">
                 <h1>
-                    <a href="/">
+                    <a href="/" class="navbar-brand">
                      Cientificos.co
                     </a>
                 </h1>
             </div>
 
-            <div class="Header-nav">
+            <!--<div class="Header-nav">
                 <a href="#/about">
                     About
                 </a>
-            </div>
+            </div>-->
         </div>
     `;
   return view;
