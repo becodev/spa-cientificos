@@ -19,3 +19,21 @@ a {
 .card {
   padding: 0;
 }
+
+.title {
+  font-size: 1.5em;
+}
+
+.bottom-nav {
+  margin-top: 10px;
+}
+
+.character {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.character-pic {
+  padding: 0;
+  width: 24rem;
+}

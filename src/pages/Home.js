@@ -1,7 +1,7 @@
-import getData from "../utils/getData";
+import { getAllData } from "../utils/getData";
 
 const Home = async () => {
-  const characters = await getData();
+  const characters = await getAllData();
 
   const view = `
         <div class="characters row justify-content-center">
@@ -11,7 +11,7 @@ const Home = async () => {
             return `
             <div class="card character-item" style="width: 18rem;">
             <img src="${image}" class="card-img-top" style="width:auto">
-                <a href="#/${id}/">
+                <a href="#/${id}">
                 
                 <div class="card-body">
                   <h2 class="card-title">${name}</h2>
@@ -21,6 +21,7 @@ const Home = async () => {
           })
           .join("")}
         </div>  
+        
     `;
   return view;
 };

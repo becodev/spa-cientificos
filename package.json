@@ -1,4 +1,5 @@
 {
+  "homepage": "http://becodev.github.io/spa-cientificos",
   "name": "cientifico",
   "version": "1.0.0",
   "description": "single page application",
@@ -10,7 +11,7 @@
   "keywords": [
     "javascript"
   ],
-  "author": "Ernesto Ledesma",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.7.5",

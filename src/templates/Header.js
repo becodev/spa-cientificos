@@ -2,11 +2,11 @@ const Header = () => {
   const view = `
         <div>
             <div class=" navbar navbar-light bg-light">
-                <h1>
-                    <a href="/" class="navbar-brand">
-                     Cientificos.co
-                    </a>
+            <a href="/" class="container navbar-brand">
+                <h1 class="title">
+                    SPA Cientificos.co
                 </h1>
+                </a>
             </div>
 
             <!--<div class="Header-nav">
