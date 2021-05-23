@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.characters {
+  margin-top: 10px;
+}
+
+.character-item {
+  margin: 5px;
+}
+
+.card {
+  padding: 0;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.bottom-nav {
+  margin-top: 10px;
+}
+
+.character {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.character-pic {
+  padding: 0;
+  width: 24rem;
+}
