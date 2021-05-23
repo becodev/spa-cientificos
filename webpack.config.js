@@ -1,10 +1,11 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const copyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     filename: "main.js",
   },
   resolve: {
@@ -12,19 +13,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              importLoaders: 1,
-              modules: true,
-            },
-          },
-        ],
-      },
       {
         test: /\.js?$/,
         exclude: /node_modules/,
@@ -34,10 +22,19 @@ module.exports = {
       },
     ],
   },
+
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "./index.html",
+      inject: true,
+      favicon: "./src/assets/icon.ico",
       template: "./public/index.html",
+      filename: "./index.html",
     }),
+    new copyWebpackPlugin([
+      {
+        from: "./src/styles/styles.css",
+        to: "",
+      },
+    ]),
   ],
 };
